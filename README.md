@@ -82,3 +82,30 @@ Before sending/receiving messages, we need to tell clients the location of name 
     The mqnamesrv(36664) is running...
     Send shutdown request to mqnamesrv(36664) OK
 ```
+
+## Simple Message Example
+
+- 使用RocketMQ以三种方式发送消息: 可靠同步、可靠异步和单向传输
+- 使用RocketMQ来消费信息
+
+### 1. Add Dependency
+Maven:
+```xml
+    <dependency>
+        <groupId>org.apache.rocketmq</groupId>
+        <artifactId>rocketmq-client</artifactId>
+        <version>4.3.0</version>
+    </dependency>
+```
+
+Gradle:
+```
+    compile 'org.apache.rocketmq:rocketmq-client:4.3.0'
+```
+
+### 2.1 发送同步消息
+可靠的同步传输用于广泛的场景，如重要的通知消息，短信通知，短信营销系统等。
+```java
+
+```
+
